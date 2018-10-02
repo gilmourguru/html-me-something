@@ -5,10 +5,176 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>HTML-Me-Something</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+    <link rel="stylesheet" type="text/css" 
+    href="https://fonts.googleapis.com/css?family=Bitter:700,400i,400|Domine:400,700|Roboto:400">
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/bootstrap.js"></script>
+    
 </head>
 <body>
-  <p>Taylor Helton</p>   
+  <div id="title-container">
+      <h1 class="titleWithImg">Pink Floyd's - 'Time'</h1>
+  </div>
+  <div class="container-fluid">
+  <div class="wrapper">
+  <h2 class="center">Examining David Gilmour's Guitar Tone</h2>
+  <hr>
+  <h3 class="center">Effect Pedal Signal Chain</h3> 
+  <div id="anchor-grid" class="grid-container">
+      <div id="echo-nav" class="grid-item nav-grid" 
+      role="button" data-toggle="collapse" data-target="#echo-div" 
+      data-parent="#anchor-grid">
+        <div class="nav-grid-name">
+          <h2>Echo</h2>
+        </div>
+      </div>
+    <div id="vol-nav" class="grid-item nav-grid" role="button" 
+    data-toggle="collapse" data-target="#vol-div"  
+    data-parent="#anchor-grid">
+      <div class="nav-grid-name">
+        <h2>Vol</h2>
+      </div>
+    </div>
+    <div id="mod-nav" class="grid-item nav-grid" role="button" 
+    data-toggle="collapse" data-target="#mod-div"  
+    data-parent="#anchor-grid">
+      <div class="nav-grid-name">
+        <h2>Mod</h2>
+      </div>
+    </div>
+    <div id="boost-nav" class="grid-item nav-grid" role="button" 
+    data-toggle="collapse" data-target="#boost-div"  
+    data-parent="#anchor-grid">
+      <div class="nav-grid-name">
+        <h2>Boost</h2>
+      </div>  
+    </div>
+    <div id="comp-nav" class="grid-item nav-grid" role="button" 
+    data-toggle="collapse" data-target="#comp-div"  
+    data-parent="#anchor-grid">
+      <div class="nav-grid-name">
+        <h2>Comp</h2>
+      </div>
+    </div>
+    <div id="fuzz-nav" class="grid-item nav-grid" role="button" 
+    data-toggle="collapse" data-target="#fuzz-div"  
+    data-parent="#anchor-grid">
+      <div class="nav-grid-name">
+        <h2>Fuzz</h2>
+      </div>
+    </div>
+  </div>
+  <div class="center">
+    <em>(from right <b>[GUITAR]</b> to left <b>[AMP]</b>)</em>
+  </div>
+  <!-- <ul>
+    <li><a href="#fuzz-div">Fuzz</a></li>
+    <li><a href="#comp-div">Compressor</a></li>
+    <li><a href="#boost-div">Overdrive/Boost</a></li>
+    <li><a href="#mod-div">Modulation</a></li>
+    <li><a href="#vol-div">Volume</a></li>
+    <li><a href="#echo-div">Echo</a></li>
+  </ul>-->
+  <hr>  
+  <div id="fuzz-div" class="pedal-div collapse center">
+    <h3>Fuzz</h3>
+    <div id="fuzzCard" class="pedalCard">
+      <div id="fuzzThumb" class="pedalThumb">
+        <img src="./images/fuzz.jpg" class="cardThumb" />
+      </div>
+      <hr class="cardDivider">
+      <p class="left">The Dallas Arbiter Fuzz Face&reg; was the 
+          fuzz of choice for David Gilmour in the late 
+          60s and early 70s. By the time Dark Side of 
+          the Moon was recorded in 1972, David was using 
+          a silicon transistor model of the fuzz unit.
+      </p>
+    </div>
+  </div>
+  <div id="comp-div" class="pedal-div collapse center">
+    <h3>Compression</h3>
+    <div id="compCard" class="pedalCard">
+      <div id="compThumb" class="pedalThumb">
+        <img src="./images/dyna_comp.png" />
+      </div>
+      <hr class="cardDivider">
+      <p>Although in 1972 David didn't use a Compressor
+          pedal, he has been known to use up to 3 compressor
+          pedals in a live scenario to achieve his tone for the
+          intro section of Time. I personally use a Dyna Comp
+          styled pedal into a Boss&reg; CS-2 for the Time intro.
+      </p>
+    </div>
+  </div>
+  <div id="boost-div" class="pedal-div collapse center">
+    <h3>Boost</h3>
+    <div id="boostCard" class="pedalCard">
+      <div id="boostThumb" class="pedalThumb">
+        <img src="./images/CS-PB.jpg" class="cardThumb"/>
+      </div>
+      <hr class="cardDivider">
+      <p class="left">
+        The boost pedal of choice for Mr. Gilmour in the 70s
+          was the Colorsound Powerboost. This was a silicon transistor 
+          booster with active bass &amp; treble. David placed this after
+           his Fuzz to boost the already fuzzed out tone to help push 
+           his amp into slight overdrive. 
+      </p>
+    </div>
+  </div>
+  <div id="mod-div" class="pedal-div collapse center">
+    <h3>Modulation</h3>
+    <div id="modCard" class="pedalCard">
+      <div id="modThumb" class="pedalThumb">
+        <img src="./images/Leslie_147.png" class="cardThumb" />
+      </div>
+      <hr class="cardDivider">
+      <p class="left">
+        Although, technically a speaker cabinet, most people aren't 
+        lucky enough to have their own rotating speaker, so this is 
+        listed as a modulation effect.  For DSOTM David used Leslie&reg; 
+        cabinets as well as a Maestro Rover.  David usually blended his 
+        rotary cabinets lower in volume than his dry Hiwatt&reg; cabs.
+      </p>
+    </div>
+  </div>
+  <div id="vol-div" class="pedal-div collapse center">
+    <h3>Volume Pedal</h3>
+    <div id="volCard" class="pedalCard">
+      <div id="volThumb" class="pedalThumb">
+        <img src="./images/volume.jpeg" class="cardThumb" />
+      </div>
+      <hr class="cardDivider">
+      <p class="left">
+        David's volume pedal of choice early on was the 
+        DeArmond Volume Pedal. In later years he would use 
+        Dunlop&reg; wah housings modified to act as volume 
+        &amp; tone pedals. The most !important thing about 
+        the placement of the volume pedal is that it is placed
+        in front of your delay pedal so as to not cut off 
+        the trails of your delay.
+      </p>
+    </div>
+  </div>
+  <div id="echo-div" class="pedal-div collapse center">
+    <h3>Echo</h3>
+    <div id="echoCard" class="pedalCard">
+      <div id="echoThumb" class="pedalThumb">
+        <img src="./images/echorec2.jpeg" class="cardThumb" />
+      </div>
+      <hr class="cardDivider">
+      <p class="left">
+        The Floyd's echo of choice until the mid - late 70s 
+        was the Binson Echorec 2.  This delay used a magnetic 
+        rotating drum with 4 separte record + playback heads 
+        that produced a slightly modulated echo. The track 
+        'Time' features 'swell' mode. The unit also has echo 
+        &amp; repeat modes.  
+      </p>
+    </div>
+  </div>
+</div>
+</div>
 </body>
 </html>
