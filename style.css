@@ -61,31 +61,46 @@
   } 
   h1.titleWithImg {
     background-image: url("./images/time-clocks.png");
-    background-size: 100%;
+    background-size: cover;
     text-align: center;
     height: 90px;
     color: whitesmoke;
-    font-size: 36px;
+    font-size: 42px;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 15px;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    font-family: 'Bitter' !important; 
    }
   #anchor-grid {
    text-align: center; 
   }
+  
   .center {
     text-align: center;
+  }
+  .signal {
+    display: inline-block;
+    height: 123px;
+    width: 16px;
+    overflow: hidden;
+    position: relative;
+    top: 36px;
+    margin: 0 auto;
+    
   }
   .nav-grid {
     display: inline-block;
     text-align: center;
-    width: 96px;
-    height: 164px;
+    width: 72px;
+    height: 123px;
     margin: 2%;
     overflow: hidden;
     border-radius: 7px;
-    border: 4px solid transparent;
+    border:3px solid transparent;
     box-shadow: 0 4px 8px 2px rgba(0,0,0,.25),
      0 6px 20px 2px rgba(0,0,0,.2);
   }
@@ -93,10 +108,14 @@
     border-color: black;
     cursor: pointer;
   }
-  .nav-grid-name {
-    padding-top: 36px;
-    font-size: 20px;
+  .nav-grid-name h2 {
+    position: relative;
+    top: 27px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
   }
+  
   #echo-nav {
     background-color: #b6b443;
   }
@@ -124,18 +143,21 @@
     margin-bottom: 0px;
     background-color: whitesmoke;
     padding: 15px;
+    position: relative;
     
   }
   .outter-wrapper {
-    background-image: url("./images/DSOTM.jpg")
+    /*background-image: url("./images/DSOTM.jpg")*/
   }
   .pedalCard {
     display: inline-block;
+    text-align: center;
     background-color: white;
     padding: 5px;
     width: 70%;
     height: auto;
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 15%;
     overflow: hidden;
     border-radius: 7px;
     border: 4px solid transparent;
@@ -146,17 +168,20 @@
     border-color: #c1a5a9;
     cursor: pointer;
   }
+  #pedalPanel {
+   
+  }
   .pedal-div {
     /*display: none;*/
     
   }
-  .pedalGrid {
+  /*.pedalGrid {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-  }
+  }*/
   p.left {
-    text-align: left;
+    text-align: left !important;
   }
   .cardDivider {
     margin-top: 8px;
@@ -173,6 +198,29 @@
     margin-top: 8px;
     width: 75%;
     color: #878787;
+  }
+  #jumboHome {
+    background: url("./images/DSOTM.jpg");
+    background-size: cover;
+    position: relative;
+    top: 65px;
+    min-height: 1000px;
+  }
+  #mainContent {
+    border-radius: 5px;
+    width: 70%;
+  }
+  #myFooter {
+    /*position: fixed;
+    bottom: 0;
+    z-index: 5;*/
+    height: 60px;
+    width: 100%;
+    color: WhiteSmoke;
+    background-color: DarkGray;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
 
@@ -1787,11 +1835,13 @@ html {
     }
   }
   .container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
+    /*padding-right: 15px;
+    padding-left: 15px;*/
     margin-right: auto;
     margin-left: auto;
-    background-image: url("./images/DSOTM.jpg");
+    min-height: 800px;
+    /*background-image: url("./images/DSOTM.jpg");
+    background-size: cover;*/
   }
   .row {
     margin-right: -15px;
@@ -5146,6 +5196,7 @@ html {
     margin-bottom: 30px;
     color: inherit;
     background-color: #eee;
+    margin: 0 auto;
   }
   .jumbotron h1,
   .jumbotron .h1 {
@@ -5161,9 +5212,10 @@ html {
   }
   .container .jumbotron,
   .container-fluid .jumbotron {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
     border-radius: 6px;
+    margin: 0 auto;
   }
   .jumbotron .container {
     max-width: 100%;
@@ -5633,9 +5685,10 @@ html {
     line-height: 1.3;
   }
   .panel {
+    margin: 0 auto;
     margin-bottom: 20px;
-    background-color: #fff;
-    border: 1px solid transparent;
+    background-color: whitesmoke;
+    border: 0px solid transparent;
     border-radius: 4px;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
             box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
