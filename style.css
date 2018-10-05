@@ -146,9 +146,7 @@
     position: relative;
     
   }
-  .outter-wrapper {
-    /*background-image: url("./images/DSOTM.jpg")*/
-  }
+  
   .pedalCard {
     display: inline-block;
     text-align: center;
@@ -168,13 +166,8 @@
     border-color: #c1a5a9;
     cursor: pointer;
   }
-  #pedalPanel {
+  
    
-  }
-  .pedal-div {
-    /*display: none;*/
-    
-  }
   /*.pedalGrid {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -204,7 +197,7 @@
     background-size: cover;
     position: relative;
     top: 65px;
-    min-height: 1000px;
+    min-height: 1440px;
   }
   #mainContent {
     border-radius: 5px;
