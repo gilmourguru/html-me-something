@@ -123,7 +123,7 @@
     background-color: #5d5a53;
   }
   #mod-nav {
-    background-color: #535f5f;
+    background-color: #935422;
   }
   #boost-nav {
     background-color: #ff881a;
@@ -149,9 +149,10 @@
   
   .pedalCard {
     display: inline-block;
-    text-align: center;
+    /*text-align: center;*/
     background-color: white;
-    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
     width: 70%;
     height: auto;
     margin-top: 15px;
@@ -215,7 +216,26 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
+  .pedal-settings-container {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 1.3em;
+    text-align: center;
+    
+  }
+  .grid-item settings {
+    display: inline;
+  }
+  hgroup.grid-item, .pedalThumb.grid-item {
+    display: inline-block;
+    padding: 40px;
+  }
+  hgroup.grid-item h2, hgroup.grid-item h3 {
+    text-align: center;
+  }
+ .grid-container.guruPedal {
+  text-align: center;
+}
 
 
 
