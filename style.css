@@ -177,7 +177,8 @@
   }
   .cardThumb {
     width: auto;
-    height: 250px;
+    max-height: 250px;
+
     /*image-resolution: 167x167px;*/
   }
   #jumboHome {
@@ -215,7 +216,7 @@
   }
   hgroup.grid-item, .pedalThumb.grid-item {
     display: inline-block;
-    padding: 40px;
+    padding: 15px;
   }
   hgroup.grid-item h2, hgroup.grid-item h3 {
     text-align: center;
