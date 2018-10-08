@@ -144,15 +144,12 @@
     margin-right: 5px;
     
     overflow: hidden;
-    border-radius: 7px;
+    /*border-radius: 7px;
     border: 4px solid transparent;
     box-shadow: 0 4px 8px 2px rgba(0,0,0,.25),
-     0 6px 20px 2px rgba(0,0,0,.2);
+     0 6px 20px 2px rgba(0,0,0,.2);*/
   }
-  .pedalCard:hover {
-    border-color: #228CDB;
-    
-  }
+  
   .cardPanel {
     max-width: 1200px;
   }
@@ -223,6 +220,20 @@
   }
  .grid-container.guruPedal {
   text-align: center;
+  background-color: #fdfffc;
+  overflow: hidden;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  border: 4px solid transparent;
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,.25),
+    0 6px 20px 2px rgba(0,0,0,.2);
+}
+.guruPedal:hover {
+  border-color: #228CDB;
+  
+}
+article.pedalCard {
+  background: transparent;
 }
 .jumbo, .signal > span {
   color: #fdfffc !important;
