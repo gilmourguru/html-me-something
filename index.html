@@ -13,143 +13,208 @@
     
 </head>
 <body>
-  <div id="title-container">
-      <h1 class="titleWithImg">Pink Floyd's - 'Time'</h1>
-  </div>
+  <header id="title-container">
+      <h1 class="titleWithImg">Examining David Gilmour's Guitar Tone</h1>
+  </header>
   <div class="container-fluid">
     <div class="jumbotron jumbotron-fluid" id="jumboHome">
-  <main class="wrapper container" id="mainContent">
-  <h2 class="center">Examining David Gilmour's Guitar Tone</h2>
-  <hr>
-  <h3 class="center">Effect Pedal Signal Chain</h3> 
-  <div id="anchor-grid" class="grid-container">
-      
-      <div id="fuzz-nav" class="grid-item nav-grid" role="button" 
-        data-toggle="collapse" data-target="#fuzzCard"  
-        data-parent="#pedalAccordion">
-          <div class="nav-grid-name">
-            <h2>Fuzz</h2>
+      <main class="wrapper container" id="mainContent">
+        <h2 class="center jumbo">Pink Floyd's - 'Time'</h2>
+        <hr class="hr-headline">
+        <h3 class="center jumbo">Effect Pedal Signal Chain</h3> 
+        <div id="anchor-grid" class="grid-container">
+          <div id="fuzz-nav" class="grid-item nav-grid" role="button" 
+          data-toggle="collapse" data-target="#fuzzCard"  
+          data-parent="#pedalAccordion">
+            <div class="nav-grid-name">
+              <h2>Fuzz</h2>
+            </div>
           </div>
+          <div class="grid-item signal">
+            <span class="glyphicon glyphicon-triangle-right"></span>
+          </div>
+          <div id="comp-nav" class="grid-item nav-grid" role="button" 
+          data-toggle="collapse" data-target="#compCard"  
+          data-parent="#pedalAccordion">
+            <div class="nav-grid-name">
+              <h2>Comp</h2>
+            </div>
+          </div>
+          <div class="grid-item signal">
+            <span class="glyphicon glyphicon-triangle-right"></span>
+          </div>
+          <div id="boost-nav" class="grid-item nav-grid" role="button" 
+          data-toggle="collapse" data-target="#boostCard"  
+          data-parent="#pedalAccordion">
+            <div class="nav-grid-name">
+              <h2>Boost</h2>
+            </div>  
+          </div>
+          <div class="grid-item signal">
+            <span class="glyphicon glyphicon-triangle-right"></span>
+          </div>
+          <div id="vol-nav" class="grid-item nav-grid" role="button" 
+          data-toggle="collapse" data-target="#volCard"  
+          data-parent="#pedalAccordion">
+            <div class="nav-grid-name">
+              <h2>Vol</h2>
+            </div>
+          </div>
+          <div class="grid-item signal">
+            <span class="glyphicon glyphicon-triangle-right"></span>
+          </div>
+          <div id="echo-nav" class="grid-item nav-grid" 
+          role="button" data-toggle="collapse" data-target="#echoCard" 
+          data-parent="#pedalAccordion">
+            <div class="nav-grid-name">
+              <h2>Echo</h2>
+            </div>
+          </div>
+          <div class="grid-item signal">
+            <span class="glyphicon glyphicon-triangle-right"></span>
+          </div>
+          <div id="mod-nav" class="grid-item nav-grid" role="button" 
+          data-toggle="collapse" data-target="#modCard"  
+          data-parent="#pedalAccordion">
+            <div class="nav-grid-name">
+              <h2>Mod</h2>
+            </div>
+          </div>
+          <div class="grid-item signal">
+              <span></span>
+            </div>
         </div>
-      
-      <div class="grid-item signal">
-        <span class="glyphicon glyphicon-triangle-right"></span>
-      </div>
-      <div id="comp-nav" class="grid-item nav-grid" role="button" 
-      data-toggle="collapse" data-target="#compCard"  
-      data-parent="#pedalAccordion">
-        <div class="nav-grid-name">
-          <h2>Comp</h2>
-        </div>
-      </div>
-      <div class="grid-item signal">
-          <span class="glyphicon glyphicon-triangle-right"></span>
-        </div>
-      <div id="boost-nav" class="grid-item nav-grid" role="button" 
-      data-toggle="collapse" data-target="#boostCard"  
-      data-parent="#pedalAccordion">
-        <div class="nav-grid-name">
-          <h2>Boost</h2>
-        </div>  
-      </div>
-      <div class="grid-item signal">
-          <span class="glyphicon glyphicon-triangle-right"></span>
-        </div>
-      <div id="vol-nav" class="grid-item nav-grid" role="button" 
-      data-toggle="collapse" data-target="#volCard"  
-      data-parent="#pedalAccordion">
-        <div class="nav-grid-name">
-          <h2>Vol</h2>
-        </div>
-      </div>
-      <div class="grid-item signal">
-          <span class="glyphicon glyphicon-triangle-right"></span>
-        </div>
-      <div id="echo-nav" class="grid-item nav-grid" 
-      role="button" data-toggle="collapse" data-target="#echoCard" 
-      data-parent="#pedalAccordion">
-        <div class="nav-grid-name">
-          <h2>Echo</h2>
-        </div>
-      </div>
-      <div class="grid-item signal">
-          <span class="glyphicon glyphicon-triangle-right"></span>
-        </div>
-      <div id="mod-nav" class="grid-item nav-grid" role="button" 
-      data-toggle="collapse" data-target="#modCard"  
-      data-parent="#pedalAccordion">
-        <div class="nav-grid-name">
-          <h2>Mod</h2>
-        </div>
-      </div>
-    
-  </div>
-  <!-- <ul>
-    <li><a href="#fuzz-div">Fuzz</a></li>
-    <li><a href="#comp-div">Compressor</a></li>
-    <li><a href="#boost-div">Overdrive/Boost</a></li>
-    <li><a href="#mod-div">Modulation</a></li>
-    <li><a href="#vol-div">Volume</a></li>
-    <li><a href="#echo-div">Echo</a></li>
-  </ul>-->
+  <!-- ********  Collapsible Pedal Cards  ******** -->
+
   <div id="pedalAccordion" class="accordion">
-    <div class="panel"id="pedalPanel"> 
+    <!-- *************   FUZZ CARD   *****************    -->
+    <div class="panel cardPanel" id="fuzzPanel"> 
       <article id="fuzzCard" class="pedalCard collapse">
-          <h3 class="text-center">Fuzz</h3>
-        <div id="fuzzThumb" class="pedalThumb">
-          <img src="./images/fuzz.jpg" class="cardThumb" />
-        </div>
-        <div class="pedal-settings-container grid-container">
-          <span class="grid-item settings">
-            <b>Vol: </b>2-3:00
-          </span>
-          <span> | </span>
-          <span class="grid-item">
-            <b>Fuzz: </b>5:00
-          </span>
-        </div>
-        <hr class="cardDivider">
-        <p class="left">The Dallas Arbiter Fuzz Face&reg; was the 
-            fuzz of choice for David Gilmour in the late 
-            60s and early 70s. By the time Dark Side of 
-            the Moon was recorded in 1972, David was using 
-            a silicon transistor model of the fuzz unit.
-        </p>
+          <h2 class="text-center">Fuzz</h2>
+          <hr class="cardDivider">
+          <section class="grid-container guruPedal">
+            <hgroup class="grid-item">
+              <h2>David's Fuzz:</h2>
+              <h3>Fuzz Face - (BC109 silicon)</h3>
+            </hgroup>
+            <div id="fuzzThumb" class="pedalThumb grid-item">
+              <img src="./images/fuzz.png" class="cardThumb" />
+            </div>
+            <div class="pedal-settings-container grid-container">
+              <span class="grid-item settings">
+                <b>Vol: </b>2-3:00
+              </span>
+              <span> | </span>
+              <span class="grid-item">
+                <b>Fuzz: </b>5:00
+              </span>
+            </div>
+            <p class="left pedal-desc">The Dallas Arbiter Fuzz Face&reg; was the 
+                fuzz of choice for David Gilmour in the late 
+                60s and early 70s. By the time Dark Side of 
+                the Moon was recorded in 1972, David was using 
+                a silicon transistor model of the fuzz unit.
+            </p>
+          </section>
+          <hr class="cardDivider darker">
+          <section class="grid-container guruPedal">
+            <hgroup class="grid-item">
+              <h2>GilmourGuru's Fuzz:</h2>
+              <h3>Analogman BC109 - Time Clock Sun Face</h3>
+            </hgroup>
+            <div id="fuzzGuruThumb" class="pedalThumb grid-item">
+              <img src="./images/analogman-bc109-fuzz.png" class="cardThumb" />
+            </div>
+            <div class="pedal-settings-container grid-container">
+              <span class="grid-item settings">
+                <b>Vol: </b>2-2:30
+              </span>
+              <span> | </span>
+              <span class="grid-item">
+                <b>Fuzz: </b>5:00
+              </span>
+            </div>
+            <p class="left pedal-desc">
+              The Analogman BC109 Floyd Custom Fuzz is handmade in the USA, 
+              and is using the same silicon transistors found in David's
+              1971 - 1975 Fuzz units used on DSOTM as well as the supporting 
+              tours.
+            </p>
+          
+        </section>
       </article>
     </div>
-    <div class="panel">
+    <!-- *************   COMP CARD   *****************    -->
+    <div class="panel cardPanel" id="compPanel">
       <article id="compCard" class="pedalCard collapse">
-        <h3>Compression</h3>
-        <div id="compThumb" class="pedalThumb">
-          <img src="./images/dyna_comp.png" />
-        </div>
-        <div class="pedal-settings-container grid-container">
-            <span class="grid-item settings">
-              <b>Vol: </b>2:00
-            </span>
-            <span> | </span>
-            <span class="grid-item">
-              <b>Sustain: </b>10:30
-            </span>
-          </div>
+        <h2 class="text-center">Compression</h2>
         <hr class="cardDivider">
-        <p>Although in 1972 David didn't use a Compressor
-            pedal, he has been known to use up to 3 compressor
-            pedals in a live scenario to achieve his tone for the
-            intro section of Time. I personally use a Dyna Comp
-            styled pedal into a Boss&reg; CS-2 for the Time intro.
-        </p>
+        <section class="grid-container guruPedal">
+            <hgroup class="grid-item">
+              <h2>David's Comp:</h2>
+              <h3>MXR Dyna Comp</h3>
+            </hgroup>
+            <div id="compThumb" class="pedalThumb grid-item">
+              <img src="./images/dyna_comp.png" class="cardThumb" />
+            </div>
+            <div class="pedal-settings-container grid-container">
+              <span class="grid-item settings">
+                <b>Vol: </b>2:00
+              </span>
+              <span> | </span>
+              <span class="grid-item">
+                <b>Sustain: </b>10:00
+              </span>
+            </div>
+            <p class="left pedal-desc">Although in 1972 David didn't use a Compressor
+                pedal, he has been known to use up to 3 compressor
+                pedals in a live scenario to achieve his tone for the
+                intro section of Time. I personally use a Dyna Comp
+                styled pedal into a Boss&reg; CS-2 for the Time intro.
+            </p>
+          </section>
+          <hr class="cardDivider darker">
+          <section class="grid-container guruPedal">
+            <hgroup class="grid-item">
+              <h2>GilmourGuru's Comp:</h2>
+              <h3>DIY Dyna Comp Clone</h3>
+            </hgroup>
+            <div id="compGuruThumb" class="pedalThumb grid-item">
+              <img src="./images/DIY_dyna_comp.png" class="cardThumb" />
+            </div>
+            <div class="pedal-settings-container grid-container">
+              <span class="grid-item settings">
+                <b>Vol: </b>2:00
+              </span>
+              <span> | </span>
+              <span class="grid-item">
+                <b>Sustain: </b>10:30
+              </span>
+            </div>
+            <p class="left pedal-desc">
+              My homemade DIY compression pedal is based upon the circuit 
+              from a 1976 MXR Dyna Comp.  This is used on all clean tones 
+              such as the intro to 'Time'. 
+            </p>
+          </section>
       </article>
     </div>
-    <div class="panel">
+    <!-- *************   BOOST CARD   *****************    -->
+    <div class="panel cardPanel">
       <article id="boostCard" class="pedalCard collapse">
-        <h3>Boost</h3>
-        <div id="boostThumb" class="pedalThumb">
-          <img src="./images/CS-PB.jpg" class="cardThumb"/>
-        </div>
-        <div class="pedal-settings-container grid-container">
+        <h2 class="text-center">Boost</h2>
+        <hr class="cardDivider">
+        <section class="grid-container guruPedal">
+          <hgroup class="grid-item">
+            <h2>David's Boost:</h2>
+            <h3>Colorsound Powerboost</h3>
+          </hgroup>
+          <div id="boostThumb" class="pedalThumb grid-item">
+            <img src="./images/CS-PB.png" class="cardThumb" />
+          </div>
+          <div class="pedal-settings-container grid-container">
             <span class="grid-item settings">
-              <b>Gain: </b>12:00
+              <b>Vol: </b>12:00
             </span>
             <span> | </span>
             <span class="grid-item">
@@ -159,43 +224,93 @@
             <span class="grid-item">
               <b>Treble: </b>9:00
             </span>
+          </div>
+          <span class="text-center">(for non-master volume units omit 'Vol' setting)</span>
+          <p class="left pedal-desc">The boost pedal of choice for Mr. Gilmour in the 70s
+              was the Colorsound Powerboost. This was a silicon transistor 
+              booster with active bass &amp; treble. David placed this after
+              his Fuzz to boost the already fuzzed out tone to help push 
+              his amp into slight overdrive. 
+          </p>
+        </section>
+        <section class="grid-container guruPedal">
+          <hgroup class="grid-item">
+            <h2>GilmourGuru's Boost:</h2>
+            <h3>Thrōbak Ovedrive Boost</h3>
+          </hgroup>
+          <div id="boostGuruThumb" class="pedalThumb grid-item">
+            <img src="./images/throbak_od_boost.png" class="cardThumb" />
+          </div>
+          <div class="pedal-settings-container grid-container">
+            <span class="grid-item settings">
+              <b>Gain: </b>12:00
+            </span>
+            <span> | </span>
+            <span class="grid-item">
+              <b>Bass: </b>12:00
+            </span>
+            <span> | </span>
+            <span class="grid-item">
+              <b>Treble: </b>9:30
+            </span>
             <span> | </span>
             <span class="grid-item">
               <b>Vol: </b>2:00
             </span>
           </div>
-          <span class="text-center">(for non-master volume units omit 'Vol' setting)</span>
-        <hr class="cardDivider">
-        <p class="left">
-          The boost pedal of choice for Mr. Gilmour in the 70s
-            was the Colorsound Powerboost. This was a silicon transistor 
-            booster with active bass &amp; treble. David placed this after
-            his Fuzz to boost the already fuzzed out tone to help push 
-            his amp into slight overdrive. 
-        </p>
+          <p class="left pedal-desc">The Thrōbak Overdrive Boost is 
+            one of the best clones of the old Colorsound Powerboost. Thrōbak 
+            has added a couple nice features to this unit.  There's a mini-toggle 
+            switch for engaging a pair of germanium clipping diodes, but with a much lower 
+            overall volume output.  The other upgrade on this version is the inclusion 
+            of a pregain stage with a dedicated footswitch.   
+          </p>
+        </section>
       </article>
     </div>
-    <div class="panel">
+    <!-- *************   VOLUME CARD   *****************    -->
+    <div class="panel cardPanel" id="volPanel">
       <article id="volCard" class="pedalCard collapse">
-        <h3>Volume Pedal</h3>
-        <div id="volThumb" class="pedalThumb">
-          <img src="./images/volume.jpeg" class="cardThumb" />
-        </div>
+        <h2 class="text-center">Volume Pedal</h2>
         <hr class="cardDivider">
-        <p class="left">
-          David's volume pedal of choice early on was the 
-          DeArmond Volume Pedal. In later years he would use 
-          Dunlop&reg; wah housings modified to act as volume 
-          &amp; tone pedals. The most !important thing about 
-          the placement of the volume pedal is that it is placed
-          in front of your delay pedal so as to not cut off 
-          the trails of your delay.
-        </p>
+        <section class="grid-container guruPedal">
+          <hgroup class="grid-item">
+            <h2>David's Vol. Pedal:</h2>
+            <h3>DeArmond Volume Pedal</h3>
+          </hgroup>
+          <div id="volThumb" class="pedalThumb grid-item">
+            <img src="./images/dearmond_vol.png" class="cardThumb" />
+          </div>
+          <p class="left pedal-desc">
+            David's volume pedal of choice early on was the 
+            DeArmond Volume Pedal. In later years he would use 
+            Dunlop&reg; wah housings modified to act as volume 
+            &amp; tone pedals. The most !important thing about 
+            the placement of the volume pedal is that it is placed
+            in front of your delay pedal so as to not cut off 
+            the trails of your delay.
+          </p>
+        </section>
+        <hr class="cardDivider darker">
+        <section class="grid-container guruPedal">
+          <hgroup class="grid-item">
+            <h2>GilmourGuru's Vol. Pedal:</h2>
+            <h3>Ernie Ball Volume Pedal Jr.</h3>
+          </hgroup>
+          <div id="volGuruThumb" class="pedalThumb grid-item">
+            <img src="./images/eb_vol.png" class="cardThumb" />
+          </div>
+          <p class="left pedal-desc">
+            This is the 250K model. I don't use the tuner out. 
+          </p>
+        </section>
       </article>
     </div>
-    <div class="panel">
+    <!-- *************   ECHO CARD   *****************    -->
+    <div class="panel cardPanel">
       <article id="echoCard" class="pedalCard collapse">
         <h2 class="text-center">Echo</h2>
+        <hr class="cardDivider">
         <section class="grid-container guruPedal">
           <hgroup class="grid-item">
             <h2>David's Echo:</h2>
@@ -204,7 +319,7 @@
           <div id="echoThumb" class="pedalThumb grid-item">
             <img src="./images/echorec2.jpeg" class="cardThumb" />
           </div>
-          <p class="left">
+          <p class="left pedal-desc">
             The Floyd's echo of choice until the mid - late 70s 
             was the Binson Echorec 2.  This delay used a magnetic 
             rotating drum with 4 separte record + playback heads 
@@ -213,7 +328,7 @@
             &amp; repeat modes.  
           </p>
         </section>
-        <hr class="cardDivider">
+        <hr class="cardDivider darker">
         <section class="grid-container guruPedal">
           <hgroup class="grid-item">
               <h2>GilmourGuru's Echo:</h2>
@@ -247,7 +362,7 @@
                 <b>Program (Opt 2): </b>12 (swell)
               </span>
             </div>
-          <p>
+          <p class="left pedal-desc">
             The Catalinbread Echorec offers 12 modes of operation combining
             the 4 different delay heads in various combinations including 
             swell mode which David used for Time. Unlike the original Binson 
@@ -256,42 +371,66 @@
             up to 2000 ms depending upon which head mode you're using.
           </p>
           
-        </section>
-      </article>
-    </div>
-    <div class="panel">
-      <article id="modCard" class="pedalCard collapse">
-        <h3>Modulation</h3>
-        <div id="modThumb" class="pedalThumb">
-          <img src="./images/Leslie_147.png" class="cardThumb" />
+          </section>
+        </article>
+      </div>
+      <!-- *************   MODULATION CARD   *****************    -->
+      <div class="panel cardPanel">
+        <article id="modCard" class="pedalCard collapse">
+          <h2 class="text-center">Modulation / Rotary</h2>
+          <hr class="cardDivider">
+          <section class="grid-container guruPedal">
+            <hgroup class="grid-item">
+              <h2>David's Rotary:</h2>
+              <h3>Leslie&reg; 147</h3>
+            </hgroup>
+            <div id="modThumb" class="pedalThumb grid-item">
+              <img src="./images/Leslie_147.png" class="cardThumb" />
+            </div>
+            <p class="left pedal-desc">
+              Although, technically a speaker cabinet, most people aren't 
+              lucky enough to have their own rotating speaker, so this is 
+              listed as a modulation effect.  For DSOTM David used Leslie&reg; 
+              cabinets as well as a Maestro Rover.  David usually blended his 
+              rotary cabinets lower in volume than his dry Hiwatt&reg; cabs.
+            </p>
+          </section>
+          <section class="grid-container guruPedal">
+            <hgroup class="grid-item">
+              <h2>GilmourGuru's Rotary:</h2>
+              <h3>Yamaha&reg; RA-200</h3>
+            </hgroup>
+            <div id="modThumb" class="pedalThumb grid-item">
+              <img src="./images/yamaha-ra-200-rotating.gif" class="cardThumb" />
+            </div>
+            <p class="left pedal-desc">
+               I use a Fender Twin Reverb&reg; preamp in front of the Yamaha. 
+               The 3 rotating speakers give ample options for mic placement 
+               allowing easy adjustment of the tremolo or chorus effects of the 
+               rotary speakers. 
+            </p>
+          </section>
+        </article>
+      </div>
+      <div class="container">
+        <div class="row text-center">
+          <h3 class="jumbo">Audio Samples</h3>
+          <hr class="hr-headline">
         </div>
-        <hr class="cardDivider">
-        <p class="left">
-          Although, technically a speaker cabinet, most people aren't 
-          lucky enough to have their own rotating speaker, so this is 
-          listed as a modulation effect.  For DSOTM David used Leslie&reg; 
-          cabinets as well as a Maestro Rover.  David usually blended his 
-          rotary cabinets lower in volume than his dry Hiwatt&reg; cabs.
-        </p>
+        <div class="grid-container text-center">
+          <div class="grid-item audioRow">
+            <b><h4 class="jumbo">Pink Floyd - Time (Demo)</h4></b>
+          </div>
+          <div class="audio-wrapper grid-item audioRow">
+            <audio controls>
+              <source src="./media/time-solo.mp3" type="audio/mpeg">
+              Your browser, unfortunately, does not support this audio element.
+            </audio>
+          </div>
+        </div>
       </div>
-    </article>
+    </main>
   </div>
-  <div class="container">
-    <div class="row text-center">
-      
-      <div class="col-sm-6 text-right">
-        <b><h4>Pink Floyd - Time (Demo)</h4></b>
-      </div>
-  <div class="audio-wrapper col-sm-6 text-left">
-    <audio controls>
-      <source src="./media/time-solo.mp3" type="audio/mpeg">
-        Your browser, unfortunately, does not support this audio element.
-    </audio>
-  </div>
-</div>
-</div>
-</main>>
-</div>
 </div>
 <footer class="container" id="myFooter">
   <div class="row">
