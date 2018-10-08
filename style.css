@@ -184,22 +184,33 @@
     position: relative;
     top: 65px;
     min-height: 1440px;
+    border-radius: 0;
   }
   #mainContent {
     border-radius: 5px;
     width: 100%;
   }
   #myFooter {
-    /*position: fixed;
-    bottom: 0;
-    z-index: 5;*/
-    height: 60px;
+    position: relative;
+    
+    z-index: 5;
+    height: 90px;
     width: 100%;
     color: WhiteSmoke;
-    background-color: DarkGray;
+    background-color: #1A181B;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    top: 64px;
+  }
+  .text-center.footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .row.footer {
+    margin: 0 auto;
   }
   .pedal-settings-container {
     margin: 0 auto;
@@ -251,7 +262,7 @@ h2.jumbo, h3.jumbo, h4.jumbo {
 .audioRow {
   display: inline-block;
   vertical-align: middle;
-  padding: 10px;
+  padding: 15px;
 }
 
 
